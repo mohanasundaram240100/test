@@ -31,8 +31,8 @@ public class Main{
 		
 	
 	
-		//File screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		//FileUtils.copyFile(screen, new File("./google.png"));
+		File screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(screen, new File("./google.png"));
 		
 		//JavascriptExecutor js = ((JavascriptExecutor)driver);
 		//js.executeScript("window.scrollBy(0,250)", "");
@@ -64,3 +64,4 @@ public class Main{
 	
 
 	
+
