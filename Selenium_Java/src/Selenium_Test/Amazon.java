@@ -11,9 +11,8 @@ public class Amazon {
 	
 	public static void main(String[] args) {
 		
-		//Selenium Manager
 		WebDriver driver = new ChromeDriver();
-		
+		driver.manage().timeouts().implicitlyWait(Duration.OfSeconds(1));
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
 		
@@ -25,3 +24,4 @@ public class Amazon {
 	}
 
 }
+
