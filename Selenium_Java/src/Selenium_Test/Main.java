@@ -53,7 +53,7 @@ public class Main{
 		Select selecteditems= new Select(selected);
 		selecteditems.selectByVisibleText("");
 		
-		List<WebElement> Selected2 = driver.findElement(By.xpath(""));
+		List<WebElement> Selected2 = (List<WebElement>) driver.findElement(By.xpath(""));
 		for(WebElement select2:Selected2) {
 			
 			System.out.println(select2.getText());
